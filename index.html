@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>ACY</title>
+
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+    
+<body class="color-change-5x">
+
+    <nav class="navbar navbar-dark text-light bg-dark fixed-top">
+        <a class="navbar-brand"><font size=3>ALEJANDRO COBO YERA</font> </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mi_menu"
+            aria-controls="mi_menu" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="mi_menu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    
+
+                    <a class="nav-link" href="#" id="menu_inicio"><i class="fas fa-home"></i> Inicio</a>
+
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-gamepad"></i> QUIEN SOY</a>
+                        
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#" id="menu_COD">1- CALL OF DUTY</a>
+                        <a class="dropdown-item" href="#" id="menu_METAS">2- METAS</a>
+                        
+                    </div>
+
+
+                </li>
+            
+
+            
+                <a class="nav-link" href="#" id="menu_colaboradores"><i class="fas fa-users"></i></i></i> CONTACTAME</a>
+            </ul>
+       
+        </div>
+
+        
+
+       
+
+    </nav>
+
+
+<main class="container-fluid">
+
+    <div id="contenido">
+    <div id="panel_inicio" class="panel">
+       
+    <div class="d-block d-sm-block d-md-none" id="pruebas">.</div>
+    
+	
+        <!-- Carrusel de imagenes -->
+            <div id="carrusel1" class="carousel slide d-none d-sm-none d-md-block" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#carrusel1" data-slide-to="0" class="active"></li>
+                       
+                        <li data-target="#carrusel1" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><center><img src="img/portada/cod.png" alt="" height="80%" width="80%"></center></div>
+                        <div class="carousel-item"><center><img src="img/portada/gmial.png" alt="" height="80%" width="80%"></center></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carrusel1" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                    <a class="carousel-control-next" href="#carrusel1" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+                  </div>
+				  
+		<!-- Modo movil -->	  
+                 <div class="d-block d-sm-block d-md-none">
+                 
+                    <p>Estás usando la versión de movil de esta página.
+                        
+                    </p>
+                </div>
+
+    </div>
+
+
+
+
+
+
+    <div id="panel_COD" class="panel">
+        <img src="img/portada/cod3.png" class="rounded float-left" id="jello-horizontal" alt="" style="width: 100%; height: 100%; max-width: 100%;">
+        <img src="img/portada/cod2.png" class="rounded float-right" id="jello-horizontal"alt="..." style="width: 100%; height: 100%; max-width: 100%;">
+    </div>
+
+    <div id="panel_METAS" class="panel">
+        <img src="img/portada/metas.jpg" class="rounded float-left" id="jello-horizontal" alt="" style="width: 100%; height: 100%; max-width: 100%;">
+        <img src="img/portada/metas1.png" class="rounded float-right" id="jello-horizontal"  alt="..." style="width: 100%; height: 100%; max-width: 100%;">
+         
+    </div>
+
+  
+    <div id="panel_canvas" class="panel">
+            
+                    <script type="text/javascript">
+                      function draw() {
+                        var canvas = document.getElementById('CANVAS');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                          ctx.fillRect(25, 25, 100, 100);
+                          ctx.clearRect(45, 45, 60, 60);
+                          ctx.strokeRect(50, 50, 50, 50);
+                        }
+                      }
+                  
+                      function draw1() {
+                        var canvas = document.getElementById('triangulo');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          ctx.beginPath();
+                          ctx.moveTo(75, 50);
+                          ctx.lineTo(100, 75);
+                          ctx.lineTo(100, 25);
+                          ctx.fill();
+                        }
+                      }
+                      function draw2() {
+                        var canvas = document.getElementById('cara');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          ctx.beginPath();
+                          ctx.arc(75, 75, 50, 0, Math.PI * 2, true);
+                          ctx.moveTo(110, 75);
+                          ctx.arc(75, 75, 35, 0, Math.PI, false);  
+                          ctx.moveTo(65, 65);
+                          ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  
+                          ctx.moveTo(95, 65);
+                          ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  
+                          ctx.stroke();
+                        }
+                      }
+                      function draw3() {
+                        var canvas = document.getElementById('LINE');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          ctx.beginPath();
+                          ctx.moveTo(25, 25);
+                          ctx.lineTo(105, 25);
+                          ctx.lineTo(25, 105);
+                          ctx.fill();
+                  
+                          ctx.beginPath();
+                          ctx.moveTo(125, 125);
+                          ctx.lineTo(125, 45);
+                          ctx.lineTo(45, 125);
+                          ctx.closePath();
+                          ctx.stroke();
+                        }
+                      }
+                      function draw4() {
+                        var canvas = document.getElementById('curva');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          for (var i = 0; i < 4; i++) {
+                            for (var j = 0; j < 3; j++) {
+                              ctx.beginPath();
+                              var x = 25 + j * 50; 
+                              var y = 25 + i * 50; 
+                              var radius = 20; 
+                              var startAngle = 0; 
+                              var endAngle = Math.PI + (Math.PI * j) / 2;     
+                              var anticlockwise = i % 2 !== 0;    
+                  
+                              ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+                  
+                              if (i > 1) {
+                                ctx.fill();
+                              } else {
+                                ctx.stroke();
+                              }
+                            }
+                          }
+                        }
+                      }
+                      function draw5() {
+                        var canvas = document.getElementById('bezier');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          ctx.beginPath();
+                          ctx.moveTo(75, 25);
+                          ctx.quadraticCurveTo(25, 25, 25, 62.5);
+                          ctx.quadraticCurveTo(25, 100, 50, 100);
+                          ctx.quadraticCurveTo(50, 120, 30, 125);
+                          ctx.quadraticCurveTo(60, 120, 65, 100);
+                          ctx.quadraticCurveTo(125, 100, 125, 62.5);
+                          ctx.quadraticCurveTo(125, 25, 75, 25);
+                          ctx.stroke();
+                        }
+                      }
+                      function draw6() {
+                        var canvas = document.getElementById('qua');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          ctx.beginPath();
+                          ctx.moveTo(75, 40);
+                          ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
+                          ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+                          ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
+                          ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+                          ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+                          ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
+                          ctx.fill();
+                        }
+                      }
+                      function draw7() {
+                        var canvas = document.getElementById('combi');
+                        if (canvas.getContext) {
+                          var ctx = canvas.getContext('2d');
+                  
+                          roundedRect(ctx, 12, 12, 150, 150, 15);
+                          roundedRect(ctx, 19, 19, 150, 150, 9);
+                          roundedRect(ctx, 53, 53, 49, 33, 10);
+                          roundedRect(ctx, 53, 119, 49, 16, 6);
+                          roundedRect(ctx, 135, 53, 49, 33, 10);
+                          roundedRect(ctx, 135, 119, 25, 49, 10);
+                  
+                          ctx.beginPath();
+                          ctx.arc(37, 37, 13, Math.PI / 7, -Math.PI / 7, false);
+                          ctx.lineTo(31, 37);
+                          ctx.fill();
+                  
+                          for (var i = 0; i < 8; i++) {
+                            ctx.fillRect(51 + i * 16, 35, 4, 4);
+                          }
+                  
+                          for (i = 0; i < 6; i++) {
+                            ctx.fillRect(115, 51 + i * 16, 4, 4);
+                          }
+                  
+                          for (i = 0; i < 8; i++) {
+                            ctx.fillRect(51 + i * 16, 99, 4, 4);
+                          }
+                  
+                          ctx.beginPath();
+                          ctx.moveTo(83, 116);
+                          ctx.lineTo(83, 102);
+                          ctx.bezierCurveTo(83, 94, 89, 88, 97, 88);
+                          ctx.bezierCurveTo(105, 88, 111, 94, 111, 102);
+                          ctx.lineTo(111, 116);
+                          ctx.lineTo(106.333, 111.333);
+                          ctx.lineTo(101.666, 116);
+                          ctx.lineTo(97, 111.333);
+                          ctx.lineTo(92.333, 116);
+                          ctx.lineTo(87.666, 111.333);
+                          ctx.lineTo(83, 116);
+                          ctx.fill();
+                  
+                          ctx.fillStyle = 'white';
+                          ctx.beginPath();
+                          ctx.moveTo(91, 96);
+                          ctx.bezierCurveTo(88, 96, 87, 99, 87, 101);
+                          ctx.bezierCurveTo(87, 103, 88, 106, 91, 106);
+                          ctx.bezierCurveTo(94, 106, 95, 103, 95, 101);
+                          ctx.bezierCurveTo(95, 99, 94, 96, 91, 96);
+                          ctx.moveTo(103, 96);
+                          ctx.bezierCurveTo(100, 96, 99, 99, 99, 101);
+                          ctx.bezierCurveTo(99, 103, 100, 106, 103, 106);
+                          ctx.bezierCurveTo(106, 106, 107, 103, 107, 101);
+                          ctx.bezierCurveTo(107, 99, 106, 96, 103, 96);
+                          ctx.fill();
+                  
+                          ctx.fillStyle = 'black';
+                          ctx.beginPath();
+                          ctx.arc(101, 102, 2, 0, Math.PI * 2, true);
+                          ctx.fill();
+                  
+                          ctx.beginPath();
+                          ctx.arc(89, 102, 2, 0, Math.PI * 2, true);
+                          ctx.fill();
+                        }
+                      }
+                  
+                  
+                      function roundedRect(ctx, x, y, width, height, radius) {
+                        ctx.beginPath();
+                        ctx.moveTo(x, y + radius);
+                        ctx.lineTo(x, y + height - radius);
+                        ctx.arcTo(x, y + height, x + radius, y + height, radius);
+                        ctx.lineTo(x + width - radius, y + height);
+                        ctx.arcTo(x + width, y + height, x + width, y + height - radius, radius);
+                        ctx.lineTo(x + width, y + radius);
+                        ctx.arcTo(x + width, y, x + width - radius, y, radius);
+                        ctx.lineTo(x + radius, y);
+                        ctx.arcTo(x, y, x, y + radius, radius);
+                        ctx.stroke();
+                      }
+                  
+                    </script>
+                  <h1>CANVAS</h1>
+                  <p>
+                    &lt;CANVAS&gt es un elemento de html el cual puede ser usado para dibujar graficos usando script.
+                    El elemento &lt;canvas&gt no está soportado en navegadores viejos, pero están soportado en la mayoría
+                    de las versiones más recientes de los navegadores. El tamaño por defecto del canvas es 300px * 150px [ancho
+                    (width) * alto (height)]
+                  </p>
+              
+                  <p>
+                    A primera vista, &lt;canvas&gt parece un &lt;img&gt elemento, con la única diferencia clara de que no tiene los
+                    atributos srcy alt.
+                    De hecho, el &lt;canvas&gt elemento tiene solo dos atributos, widthy height. Ambos son opcionales y también se
+                    pueden configurar
+                    usando las propiedades DOM . Cuando se especifican no y atributos, el lienzo inicialmente tendrá 300 píxeles de
+                    ancho y 150 píxeles
+                    de alto. El elemento puede ser dimensionado arbitrariamente por CSS , pero durante la representación, la imagen
+                    se ajusta para
+                    ajustarse a su tamaño de diseño: si el tamaño de CSS no respeta la proporción del lienzo inicial, aparecerá
+                    distorsionado.widthheight
+                  </p>
+              
+                  <p>
+                    a continuacion os dejo un ejemplo para crear un lienzo en blanco
+                    <pre class="brush: html line-numbers  language-html"><code class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Canvas tutorial<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+                                    <span class="token keyword">function</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                      <span class="token keyword">var</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'tutorial'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                      <span class="token keyword">if</span> <span class="token punctuation">(</span>canvas<span class="token punctuation">.</span>getContext<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                        <span class="token keyword">var</span> ctx <span class="token operator">=</span> canvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">'2d'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                      <span class="token punctuation">}</span>
+                                    <span class="token punctuation">}</span>
+                                  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+                                    <span class="token selector">canvas </span><span class="token punctuation">{</span> <span class="token property">border</span><span class="token punctuation">:</span> <span class="token number">1</span>px solid black<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+                                  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">onload</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>draw();<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                                  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tutorial<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>150<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">&gt;</span></span>
+                                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+                              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span class="line-numbers-rows" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+              
+                  </p>
+              
+                  <canvas id="tutorial" width="150" height="150"></canvas>
+              
+                  <h1>CUADRICULA</h1>
+              
+                  <P>
+                    <img src="https://mdn.mozillademos.org/files/224/Canvas_default_grid.png" alt="" height="100%" width="100%"
+                      class="internal">
+                    Antes de que podamos comenzar a dibujar, debemos hablar sobre la cuadrícula del lienzo o el espacio de
+                    coordenadas . Nuestro esqueleto HTML tenía un elemento de lienzo de 150 píxeles de ancho y 150 píxeles de alto. A
+                    la derecha, verá este lienzo con la cuadrícula predeterminada superpuesta. Normalmente, 1 unidad en la cuadrícula
+                    corresponde a 1 píxel en el lienzo. El origen de esta cuadrícula se coloca en la esquina superior izquierda en la
+                    coordenada (0,0). Todos los elementos se colocan en relación a este origen. Por lo tanto, la posición de la
+                    esquina superior izquierda del cuadrado azul se convierte en x píxeles desde la izquierda y en píxeles desde la
+                    parte superior, en la coordenada (x, y). Más adelante en este tutorial veremos cómo podemos traducir el origen a
+                    una posición diferente, rotar la cuadrícula e incluso escalarla, pero por ahora nos ceñiremos a la
+                    predeterminada.
+                  </P>
+                  <H1>DIBUJAR UN RECTANGULO</H1>
+                  <p>
+                    Primero veamos el rectángulo. Hay tres funciones que dibujan rectángulos en el lienzo:
+              
+                    <br>
+                    <font color="lime">fillRect(x, y, width, height)</font></br>
+                    <br>Dibuja un rectángulo relleno.</br>
+                    <br>
+                    <font color="lime">stronkeRect(x, y, width, height)</font></br>
+                    <br>Dibuja un contorno rectangular.</br>
+                    <br>
+                    <font color="lime">clearRect(x, y, width, height)</font></br>
+                    <br>Despeja el área rectangular especificada, haciéndola completamente transparente.</br>
+                    <br>Aqui hay un pequeño ejemplo de las tres funciones </br>
+                    <canvas id="CANVAS" width="150" height="150"></canvas>
+                  </p>
+                  <h1>TRAZADOS DE CAMINOS</h1>
+                  <p>
+                    <br>Las únicas otras formas primitivas son los caminos . Una ruta es una lista de puntos, conectados por
+                    segmentos de líneas que pueden ser de diferentes formas, curvas o no, de diferente ancho y de diferente color. Un
+                    camino, o incluso un subpath, puede ser cerrado. Para hacer formas usando caminos toma algunos pasos adicionales:</br>
+                    <br> 1. Primero creas el camino</br>
+                    <br> 2.A continuacion, utilizas los comandos de dibujo para dibujar en la ruta</br>
+                    <br> 3.Una vez que se haya creado la ruta,puede trazar o rellenar la ruta para reprensetarla</br>
+              
+                    <br>Aqui están las funciones utilizadas para realizar estos pasos :</br>
+              
+              
+                  </p>
+                  <br>
+                  <font color="red">beginPath</font></br>
+                  <br>Crea un nuevo camino. Una vez creados, los futuros comandos de dibujo se dirigen a la ruta y se usan para
+                  construir la ruta hacia arriba.</br>
+                  <br>
+                  <font color="red">closePath()</font></br>
+                  <br>Agrega una línea recta a la ruta, y va al inicio de la ruta secundaria actual.</br>
+                  <br>
+                  <font color="red">stroke()</font></br>
+                  <br>Dibuja la forma acariciando su contorno.</br>
+                  <br>
+                  <font color="red">fill()</font></br>
+                  <br>Dibuja una forma sólida rellenando el área de contenido de la ruta.</br>
+                  <br>El primer paso para crear una ruta es llamar al beginPath(). Internamente, las rutas se almacenan como una
+                  lista de subrutas (líneas, arcos, etc.) que juntas forman una forma. Cada vez que se llama a este método, la lista
+                  se restablece y podemos comenzar a dibujar nuevas formas.</br>
+                  <br>El segundo paso es llamar a los métodos que realmente especifican las rutas a dibujar.</br>
+                  <br>El tercero, y un paso opcional, es llamar closePath(). Este método intenta cerrar la forma dibujando una línea
+                  recta desde el punto actual hasta el inicio. Si la forma ya se ha cerrado o solo hay un punto en la lista, esta
+                  función no hace nada.</br>
+                  <h4>dibujo de un triangulo</h4>
+                  <pre>
+                              function draw() {
+                                  var canvas = document.getElementById('canvas');
+                                  if (canvas.getContext) {
+                                    var ctx = canvas.getContext('2d');
+                                
+                                    ctx.beginPath();
+                                    ctx.moveTo(75, 50);
+                                    ctx.lineTo(100, 75);
+                                    ctx.lineTo(100, 25);
+                                    ctx.fill();
+                                  }
+                                }
+              
+                                <canvas id="triangulo" width="150" height="150"></canvas>
+                         </pre>
+                  <h1>MOVIENDO LA PLUMA</h1>
+                  <p>
+                    Una función muy útil, que en realidad no dibuja nada pero se convierte en parte de la lista de rutas descrita
+                    anteriormente, es la moveTo()función. Probablemente, lo mejor es pensar en esto como levantar un bolígrafo o un
+                    lápiz de un lugar en un pedazo de papel y colocarlo en el siguiente.
+                    <br>
+                    <font color="red">moveTo(x, y)</font></br>
+              
+                    <br>Cuando el lienzo está inicializado o beginPath()se llama, normalmente querrá usar la moveTo()función para
+                    ubicar el punto de partida en otro lugar. También podríamos usar moveTo()para dibujar caminos desconectados. Echa
+                    un vistazo a la cara sonriente debajo.</br>
+                    <br>Para probar esto por ti mismo, puedes usar el siguiente fragmento de código. Solo pégalo en la draw()función
+                    que vimos anteriormente.</br>
+                    <pre>
+                                      function draw2() {
+                                          var canvas = document.getElementById('canvas');
+                                          if (canvas.getContext) {
+                                             var ctx = canvas.getContext('2d');
+                                        
+                                            ctx.beginPath();
+                                            ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+                                            ctx.moveTo(110, 75);
+                                            ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+                                            ctx.moveTo(65, 65);
+                                            ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+                                            ctx.moveTo(95, 65);
+                                            ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+                                            ctx.stroke();
+                                          }
+                                        }
+              
+                                        <h2>EJEMPLO</h2>
+                                        <canvas id="cara" width="150" height="150"></canvas>
+                              </pre>
+              
+                  </p>
+              
+                  <h1>DIBUJAR LINEAS</h1>
+                  <p>
+                    <br>Para dibujar líneas rectas, usa el lineTo()método.</br>
+                    <br>
+                    <font color="red">lineTo(x,y)</font></br>
+                    <br>Dibuja una línea desde la posición actual del dibujo hasta la posición especificada por xy y.</br>
+                    <br>Este método toma dos argumentos x Y y, que son las coordenadas del punto final de la línea. El punto de
+                    inicio depende de los trazados previamente dibujados, donde el punto final del camino anterior es el punto de
+                    inicio para lo siguiente, etc. El punto de inicio también se puede cambiar usando el moveTo()método.</br>
+                    <br>El siguiente ejemplo dibuja dos triángulos, uno lleno y otro delineado.</br>
+                    <pre>
+                                  function draw() {
+                                      var canvas = document.getElementById('canvas');
+                                      if (canvas.getContext) {
+                                        var ctx = canvas.getContext('2d');
+                                    
+                                        // Filled triangle
+                                        ctx.beginPath();
+                                        ctx.moveTo(25, 25);
+                                        ctx.lineTo(105, 25);
+                                        ctx.lineTo(25, 105);
+                                        ctx.fill();
+                                    
+                                        // Stroked triangle
+                                        ctx.beginPath();
+                                        ctx.moveTo(125, 125);
+                                        ctx.lineTo(125, 45);
+                                        ctx.lineTo(45, 125);
+                                        ctx.closePath();
+                                        ctx.stroke();
+                                      }
+                                    }
+              
+                                    <h2>EJEMPLO</h2>
+              
+                                    <canvas id="LINE" width="150" height="150"></canvas>
+                             </pre>
+                  </p>
+              
+              
+                  <h1>DIBUJAR ARCOS</h1>
+              
+                  <P>
+                    <br>Para dibujar arcos o círculos, usamos los métodos arc()o arcTo().</br>
+                    <br>
+                    <font color="red">arc(x, y, radius, startAngle, endAngle, anticlockwise)</font></br>
+                    <br>Dibuja un arco que está centrado en la posición (x, y) con el radio r que comienza en el inicio del ángulo y
+                    termina en el ángulo final que va en la dirección dada indicada por el sentido contrario a las agujas del reloj
+                    (por defecto a la derecha).</br>
+                    <br>
+                    <font color="red">arcTo(x1, y1, x2, y2, radius)</font></br>
+                    <br>Dibuja un arco con los puntos de control y el radio dados, conectados al punto anterior por una línea recta</br>
+                    <br>Echemos un vistazo más detallado al arcmétodo, que toma seis parámetros: xy yson las coordenadas del centro
+                    del círculo en el que se debe dibujar el arco. radiuses autoexplicativo Los parámetros startAngley
+                    endAngledefinen los puntos de inicio y final del arco en radianes, a lo largo de la curva del círculo. Estos se
+                    miden desde el eje x. El anticlockwiseparámetro es un valor booleano que, cuando true, dibuja el arco en sentido
+                    antihorario; De lo contrario, el arco se dibuja en sentido horario.</br>
+                    <br>El siguiente ejemplo es un poco más complejo que los que hemos visto anteriormente. Dibuja 12 arcos
+                    diferentes, todos con diferentes ángulos y rellenos.</br>
+                    <pre>
+                                  function draw() {
+                                      var canvas = document.getElementById('canvas');
+                                      if (canvas.getContext) {
+                                        var ctx = canvas.getContext('2d');
+                                    
+                                        for (var i = 0; i < 4; i++) {
+                                          for (var j = 0; j < 3; j++) {
+                                            ctx.beginPath();
+                                            var x = 25 + j * 50; // x coordinate
+                                            var y = 25 + i * 50; // y coordinate
+                                            var radius = 20; // Arc radius
+                                            var startAngle = 0; // Starting point on circle
+                                            var endAngle = Math.PI + (Math.PI * j) / 2; // End point on circle
+                                            var anticlockwise = i % 2 !== 0; // clockwise or anticlockwise
+                                    
+                                            ctx.arc(x, y, radius, startAngle, endAngle, anticlockwise);
+                                    
+                                            if (i > 1) {
+                                              ctx.fill();
+                                            } else {
+                                              ctx.stroke();
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+              
+                                    <h2>EJEMPLO</h2>
+              
+              
+                                    <canvas id="curva" width="150" height="200"></canvas>
+                             </pre>
+                  </P>
+              
+                  <h1>Curvas de bezier y cuadratica</h1>
+              
+                  <p>
+                    <br>El siguiente tipo de caminos disponibles son las curvas de Bézier , disponibles en variedades cúbicas y
+                    cuadráticas. Estos se utilizan generalmente para dibujar formas orgánicas complejas</br>
+                    <br>
+                    <font color="red">quadraticCurveTo(cp1x, cp1y, x, y)</font></br>
+                    <br>Dibuja una curva de Bézier cuadrática desde la posición actual del lápiz hasta el punto final especificado
+                    por xy y, utilizando el punto de control especificado por cp1xy cp1y.</br>
+                    <br>
+                    <font color="red">bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)</font></br>
+                    <br>Dibuja una curva Bézier cúbica desde la posición actual del lápiz hasta el punto final especificado por xy y,
+                    utilizando los puntos de control especificados por ( cp1x, cp1y) y (cp2x, cp2y).</br>
+                    <br></br>
+                    <pre>
+              
+                              <h2>curva cuadratica</h2>
+                                  function draw() {
+                                      var canvas = document.getElementById('canvas');
+                                      if (canvas.getContext) {
+                                        var ctx = canvas.getContext('2d');
+                                    
+                                        // Quadratric curves example
+                                        ctx.beginPath();
+                                        ctx.moveTo(75, 25);
+                                        ctx.quadraticCurveTo(25, 25, 25, 62.5);
+                                        ctx.quadraticCurveTo(25, 100, 50, 100);
+                                        ctx.quadraticCurveTo(50, 120, 30, 125);
+                                        ctx.quadraticCurveTo(60, 120, 65, 100);
+                                        ctx.quadraticCurveTo(125, 100, 125, 62.5);
+                                        ctx.quadraticCurveTo(125, 25, 75, 25);
+                                        ctx.stroke();
+                                      }
+                                    }
+              
+                                    <h2>EJEMPLO</h2>
+              
+                                    <canvas id="bezier" width="150" height="150"></canvas>
+              
+                                    <h2>curva bezier</h2>
+              
+                                    function draw() {
+                                      var canvas = document.getElementById('canvas');
+                                      if (canvas.getContext) {
+                                        var ctx = canvas.getContext('2d');
+                                    
+                                        // Cubic curves example
+                                        ctx.beginPath();
+                                        ctx.moveTo(75, 40);
+                                        ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
+                                        ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+                                        ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
+                                        ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+                                        ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+                                        ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
+                                        ctx.fill();
+                                      }
+                                    }
+              
+                                    <h2>EJEMPLO</h2>
+              
+                                    <canvas id="qua" width="150" height="150"></canvas>
+              
+              
+              
+                             </pre>
+              
+              
+              
+              
+                  </p>
+              
+                  <h1>COMBINACIONES</h1>
+              
+                  <P>
+                    Ahora le vamos a mostrar un canvas que convina todo lo vsito anteriormente
+              
+                    <pre>
+                                  function draw() {
+                                      var canvas = document.getElementById('canvas');
+                                      if (canvas.getContext) {
+                                        var ctx = canvas.getContext('2d');
+                                    
+                                        roundedRect(ctx, 12, 12, 150, 150, 15);
+                                        roundedRect(ctx, 19, 19, 150, 150, 9);
+                                        roundedRect(ctx, 53, 53, 49, 33, 10);
+                                        roundedRect(ctx, 53, 119, 49, 16, 6);
+                                        roundedRect(ctx, 135, 53, 49, 33, 10);
+                                        roundedRect(ctx, 135, 119, 25, 49, 10);
+                                    
+                                        ctx.beginPath();
+                                        ctx.arc(37, 37, 13, Math.PI / 7, -Math.PI / 7, false);
+                                        ctx.lineTo(31, 37);
+                                        ctx.fill();
+                                    
+                                        for (var i = 0; i < 8; i++) {
+                                          ctx.fillRect(51 + i * 16, 35, 4, 4);
+                                        }
+                                    
+                                        for (i = 0; i < 6; i++) {
+                                          ctx.fillRect(115, 51 + i * 16, 4, 4);
+                                        }
+                                    
+                                        for (i = 0; i < 8; i++) {
+                                          ctx.fillRect(51 + i * 16, 99, 4, 4);
+                                        }
+                                    
+                                        ctx.beginPath();
+                                        ctx.moveTo(83, 116);
+                                        ctx.lineTo(83, 102);
+                                        ctx.bezierCurveTo(83, 94, 89, 88, 97, 88);
+                                        ctx.bezierCurveTo(105, 88, 111, 94, 111, 102);
+                                        ctx.lineTo(111, 116);
+                                        ctx.lineTo(106.333, 111.333);
+                                        ctx.lineTo(101.666, 116);
+                                        ctx.lineTo(97, 111.333);
+                                        ctx.lineTo(92.333, 116);
+                                        ctx.lineTo(87.666, 111.333);
+                                        ctx.lineTo(83, 116);
+                                        ctx.fill();
+                                    
+                                        ctx.fillStyle = 'white';
+                                        ctx.beginPath();
+                                        ctx.moveTo(91, 96);
+                                        ctx.bezierCurveTo(88, 96, 87, 99, 87, 101);
+                                        ctx.bezierCurveTo(87, 103, 88, 106, 91, 106);
+                                        ctx.bezierCurveTo(94, 106, 95, 103, 95, 101);
+                                        ctx.bezierCurveTo(95, 99, 94, 96, 91, 96);
+                                        ctx.moveTo(103, 96);
+                                        ctx.bezierCurveTo(100, 96, 99, 99, 99, 101);
+                                        ctx.bezierCurveTo(99, 103, 100, 106, 103, 106);
+                                        ctx.bezierCurveTo(106, 106, 107, 103, 107, 101);
+                                        ctx.bezierCurveTo(107, 99, 106, 96, 103, 96);
+                                        ctx.fill();
+                                    
+                                        ctx.fillStyle = 'black';
+                                        ctx.beginPath();
+                                        ctx.arc(101, 102, 2, 0, Math.PI * 2, true);
+                                        ctx.fill();
+                                    
+                                        ctx.beginPath();
+                                        ctx.arc(89, 102, 2, 0, Math.PI * 2, true);
+                                        ctx.fill();
+                                      }
+                                    }
+                                    
+                                    // A utility function to draw a rectangle with rounded corners.
+                                    
+                                    function roundedRect(ctx, x, y, width, height, radius) {
+                                      ctx.beginPath();
+                                      ctx.moveTo(x, y + radius);
+                                      ctx.lineTo(x, y + height - radius);
+                                      ctx.arcTo(x, y + height, x + radius, y + height, radius);
+                                      ctx.lineTo(x + width - radius, y + height);
+                                      ctx.arcTo(x + width, y + height, x + width, y + height-radius, radius);
+                                      ctx.lineTo(x + width, y + radius);
+                                      ctx.arcTo(x + width, y, x + width - radius, y, radius);
+                                      ctx.lineTo(x + radius, y);
+                                      ctx.arcTo(x, y, x, y + radius, radius);
+                                      ctx.stroke();
+                                    }
+              
+                                    <h2>EJEMPLO</h2>
+              
+                                    <canvas id="combi" width="150" height="150"></canvas>
+                             </pre>
+                  </P>
+              
+                
+    </div>
+
+
+
+
+<!-- Colaboradores -->
+<div id="panel_colaboradores" class="panel">
+        <h3>ESTA PAGINA ESTA ECHA POR </h3>
+        <ul>
+          
+            <h6>Alejandro COBO YERA</h6>
+        <div>
+         <h6>correo:moflycy@gmail.com</h6>
+        </div>
+            
+        </ul>
+
+</div>
+</div>
+</main>
+<footer class="page-footer font-small text-light pt-1 bg-dark">
+
+        <div class="footer-copyright text-center py-3">I.E.S. Virgen del Carmen © 2019 </div>
+</footer>
+
+</body>
+</html>
